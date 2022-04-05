@@ -18,4 +18,6 @@ n = 5
 | 4  |   12   |  6    |  15
 | 5  |   18   |  9    |  24
 
+so at day 5 the answer would be 24
+
 [link to the problem on hacker rank](https://www.hackerrank.com/challenges/strange-advertising/problem?isFullScreen=true)
