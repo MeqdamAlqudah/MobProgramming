@@ -1,0 +1,33 @@
+#!/bin/ruby
+
+require 'json'
+require 'stringio'
+
+#
+# Complete the 'viralAdvertising' function below.
+#
+# The function is expected to return an INTEGER.
+# The function accepts INTEGER n as parameter.
+#
+
+def viralAdvertising(n)
+    # Write your code here
+    shared = 5
+    cumulative =0 
+    (1..n).each do |_|
+        cumulative+= shared/2
+        shared = shared/2 * 3
+    end
+    cumulative
+end
+
+fptr = File.open(ENV['OUTPUT_PATH'], 'w')
+
+n = gets.strip.to_i
+
+result = viralAdvertising n
+
+fptr.write result
+fptr.write "\n"
+
+fptr.close()
